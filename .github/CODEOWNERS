@@ -1,0 +1,41 @@
+# CODEOWNERS file for dashboard-server-433
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-api @Armor-test/grp-payments @Armor-test/grp-integration
+
+# Directory ownership
+/config/ @Armor-test/dept-logging @Armor-test/dept-security
+/components/ @Armor-test/dept-api @Armor-test/grp-storage @Armor-test/team-logging
+/db/ @Armor-test/grp-api @Armor-test/dept-billing @Armor-test/dept-release
+/data/ @Armor-test/squad-cache @Armor-test/dept-ui
+/build/ @Armor-test/dept-ui @Armor-test/team-research
+/third_party/ @Armor-test/team-frontend @Armor-test/squad-ml @Armor-test/dept-data
+/scripts/ @Armor-test/team-research @Armor-test/squad-apps
+/app/ @Armor-test/dept-identity @Armor-test/team-logging
+/auth/ @Armor-test/unit-devops @Armor-test/squad-api
+/assets/ @Armor-test/dept-test @Armor-test/squad-apps
+/utils/ @Armor-test/squad-frontend @Armor-test/squad-payments @Armor-test/team-reporting
+/web/ @Armor-test/squad-payments @Armor-test/unit-governance
+/hooks/ @Armor-test/dept-api @Armor-test/team-frontend @Armor-test/dept-logging
+/static/ @Armor-test/unit-devops @Armor-test/unit-cloud
+/tools/ @Armor-test/unit-governance @Armor-test/team-notifications
+
+# File type ownership
+*.cpp @Armor-test/dept-reliability @Armor-test/grp-search @Armor-test/grp-storage
+*.h @Armor-test/dept-automation @Armor-test/squad-research
+*.yaml @Armor-test/squad-reporting @Armor-test/dept-automation @Armor-test/team-logging
+*.go @Armor-test/dept-data @Armor-test/team-research @Armor-test/team-security
+*.rb @Armor-test/grp-payments @Armor-test/squad-apps
+*.cs @Armor-test/squad-search @Armor-test/grp-integration @Armor-test/dept-reliability
+*.py @Armor-test/dept-security @Armor-test/team-logging @Armor-test/team-security
+*.gradle @Armor-test/unit-governance @Armor-test/grp-storage @Armor-test/dept-release
+*.lock @Armor-test/dept-test @Armor-test/dept-billing
+*.ts @Armor-test/squad-cloud @Armor-test/squad-reporting @Armor-test/team-core
+*.properties @Armor-test/dept-security @Armor-test/team-logging
+*.tf @Armor-test/squad-qa @Armor-test/grp-ui
+*.proto @Armor-test/unit-design @Armor-test/dept-security
+
+# Security and special files
+Dockerfile @Armor-test/devops @Armor-test/infra
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+package.json @Armor-test/dependency-team @Armor-test/security
